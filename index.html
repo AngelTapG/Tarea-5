@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 5</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div>
+        <div id="linea-superior" class="linearosa"></div>
+    </div>
+
+    <div>
+        <div class="contenedor_logo">
+            <img src="imagenes/logocabecera.jpg" alt="Logo Spa">
+        </div>
+        <div class="contenedor_enlaces">
+            <a href="#" class="espaciado"><img src="imagenes/icono_facebook.jpg" alt="Logo Facebook"></a>
+            <a href="#" class="espaciado"><img src="imagenes/icono_instagram.jpg" alt="Logo Instagram"></a>
+            <a href="#" class="espaciado"><img src="imagenes/icono_twitter.jpg" alt="Logo Twitter"></a>
+        </div>
+    </div>
+
+    <div class="centrar opciones1">
+        <a class="opciones" href="#">GALERIA</a>
+        <a class="opciones" href="#">PRECIOS</a>
+        <a class="opciones" href="#">CONTACTANOS</a>
+        <a class="opciones" href="#">EQUIPO</a>
+    </div>
+    <br>
+
+    <div class="relativo">
+        <div class="imagenpiedras">
+            <div class="contenedorbotonestexto">
+                <h1 class="centrar textoblanco">PROMOCIONES DE MARZO</h1>
+                <h3 class="centrar textoblanco">Se acerca la epoca de playa y por eso preparamos estas 2 promociones ideales para ti</h3>
+                <br>
+                <div class="botonesimg">
+                    <div class="botonpromo">
+                        <a href="#">Solicitar Promocion</a>
+                    </div>
+                    <div class="botonvideo">
+                        <a href="#">Ver Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fondovelas">
+        <div class="izq textovelas">
+            <h3>Los productos Science of Beauty</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatum incidunt aut sed, vitae quas vel consequuntur dolorum ullam neque assumenda totam. At expedita id minus voluptatem laudantium laboriosam! Voluptates molestias soluta dicta cumque nostrum quas quia totam sint minima. Officiis non consequuntur molestias libero at, asperiores vero nam minima.</p>
+        </div>
+        <div class="imgvelas">
+            <img src="imagenes/fotovelas.jpg" alt="foto velas">
+        </div>
+    </div>
+
+    <div class="centrar">
+        <h3>Buscamos Talento para Integrarlos a nuestro Equipo</h3>
+    </div>
+    <div class="imgaromatizante">
+        <img src="imagenes/fotoaromatizante.jpg" alt="foto Aromatizante">
+    </div>
+
+    <div class="textoaromatizante">
+        <div>
+            <h4>Puesto de trabajo para Recepcionista</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio sunt provident perferendis reiciendis expedita, aliquid molestias accusamus, quod vero maiores commodi deserunt pariatur, illum distinctio. Sit sunt magnam aut.</p>
+            <h4>Puesto de trabajo para Masajista</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio sunt provident perferendis reiciendis expedita, aliquid molestias accusamus, quod vero maiores commodi deserunt pariatur, illum distinctio. Sit sunt magnam aut.</p>
+            <h4>Puesto de trabajo para Nutriologo</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio sunt provident perferendis reiciendis expedita, aliquid molestias accusamus, quod vero maiores commodi deserunt pariatur, illum distinctio. Sit sunt magnam aut.</p>
+        </div>
+    </div>
+
+    <div class="centrar">
+        <div class="noticiastitulo">
+            <h2>Recibe noticias y promociones de SPA SALON</h2>
+        </div>
+        <div class="instalacionestitulo">
+            <h2>Nuestras Instalaciones</h2>
+        </div>
+    </div>
+
+    <div class="centrar">
+        <p class="noticiasdesc">Un lugar para consentirte de pies a cabeza<br>Servicio de salón estética y Spa personalizado</p>
+        <div><p><span>TELEFONO: </span>999 420 8871</p></div>
+        <div><p><span>CORREO:</span> info@spasalon.com</p></div>
+
+        <form id="formulario-suscripcion">
+            <div>
+                <p class="negritas"> Tu direccion de correo electronico</p>
+                <input type="email" id="email" placeholder="tunombre@spasalon.com" required>
+            </div>
+            <div>
+                <button type="submit" class="btn_validar" id="btn_validar">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="centrar" style="margin-top: 30px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w4qaODLR_Xg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <div id="linea-superior" class="linearosa" style="margin-top: 30px;"></div>
+    </div>
+
+<script>
+        $(document).ready(function() {
+            $("#btn_validar").click(function (e) {
+                e.preventDefault();
+
+                let expresionCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                let emailValue = $("#email").val().trim();
+
+                if (emailValue == '') {
+                    alert("No escribiste tu email");
+                    $("#email").focus();
+                    return false;
+                }
+
+                if (!expresionCorreo.test(emailValue)) {
+                    alert("Escribe un email válido");
+                    $("#email").focus();
+                    return false;
+                }
+
+
+               $("#email").val('');
+            });
+        });
+    </script>
+</body>
+</html>

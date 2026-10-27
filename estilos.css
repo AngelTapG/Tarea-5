@@ -1,0 +1,146 @@
+body {
+    background-color: #fff9f1;
+}
+.ancho {
+    width: 1200px;
+    margin: auto;
+    font-size: 0;
+}
+.relativo {
+    position: relative;
+}
+.linearosa {
+    height: 10px;
+    background-color: #ff3281;
+}
+.contenedor_logo {
+        width: 10%;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.contenedor_enlaces {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    text-align: right;
+}
+.espaciado {
+    margin: 10px;
+}
+.opciones1 {
+    border: black solid 3px;
+}
+.opciones {
+    font-weight: bold;
+        margin: 120px;
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+}
+.centrar {
+    text-align: center;
+}
+.fondovelas {
+    background-color: white;
+}
+.imagenpiedras {
+        background-image: url(imagenes/fondopiedras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.botonpromo {
+    background-color: #ff3281;
+        color: white;
+    padding: 10px 20px;
+    border-radius: 0px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block
+}
+.botonesimg {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.botonesimg a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 30px;
+}
+.botonvideo {
+    background-color: transparent;
+    border: 2px solid #ff3281;
+        color: white;
+    padding: 10px 20px;
+    border-radius: 0px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 15px;
+}
+.textoblanco {
+    color: white;
+    text-decoration: none;
+}
+.contenedorbotonestexto {
+    padding-top: 120px;
+}
+.izq {
+    text-align: left;
+}
+.textovelas {
+    display: inline-block;
+    margin-left: 50px;
+    vertical-align: middle;
+    width: 40%;
+
+
+}
+.imgvelas {
+        width: 40%;
+    margin-right:30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 100px;
+}
+.imgaromatizante {
+    width: 40%;
+    margin-left:30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 100px;
+}
+.textoaromatizante {
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: middle;
+    width: 40%;
+}
+.noticiastitulo {
+    display: inline-block;
+    margin-left: 50px;
+    vertical-align: middle;
+    width: 40%;
+}
+.instalacionestitulo {
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: middle;
+    width: 40%;
+}
+.noticiasdesc {
+    display: inline-block;
+    margin-left: 50px;
+    vertical-align: middle;
+    width: 40%;
+}
+.negritas {
+    font-weight: bold;
+}
